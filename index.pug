@@ -1,0 +1,88 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Document
+		// Bootstrap CSS
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet")
+		link(rel="stylesheet" href="styl.css")
+	body
+		nav.navbar.navbar-expand-lg.navbar-dark.p-2.bg-secondary.border-0
+			.container-fluid
+				a.navbar-brand(href="https://ug.edu.pl")
+					h1.visually-hidden Uniwersytet Gdański
+					img(src="https://ug.edu.pl/sites/ug.edu.pl/files/color/ug_theme-aa8f8260/logo.svg" style="width: 128px; height:auto" alt="Logo UG")
+				button.navbar-toggler.border-0.rounded-0.p-1(type="button" data-bs-toggle="collapse" data-bs-target="#nawigacja" aria-controls="nawigacja" aria-expanded="false" aria-label="Przełącz nawigację")
+					span.navbar-toggler-icon
+				.collapse.navbar-collapse.py-4.py-md-0#nawigacja
+					ul.navbar-nav.mx-auto.mb-2.mb-lg-0
+						// Uniwersytet
+						li.nav-item.dropdown.position-static
+							a.nav-link.dropdown-toggle.text-white.mx-0.mx-md-2(href="#" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false") O uczelni
+							ul.dropdown-menu.m-0.w-100.shadow-md.rounded-0.border-0.bg-secondary(aria-labelledby="navbarDropdown0")
+								.container.px-md-2.py-md-5
+									.row
+										.col-md-4.p-0
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/wladze") Władze
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o_uczelni/struktura_ug") Struktura UG
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/wydzialy") Wydziały
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/uniwersytet-gdanski") O Uniwersytecie Gdańskim
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/uniwersytet-odpowiedzialny-spolecznie") Uniwersytet odpowiedzialny społecznie
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/uniwersytet_otwarty") Uniwersytet Otwarty
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o_uczelni/mapa_ug") Mapa UG
+										.col-md-4.p-0
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/wspolpraca") Współpraca
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/miedzynarodowe-centra-badawcze") Międzynarodowe Centra Badawcze
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/uslugi-it") Usługi IT
+											li.py-2.px-0
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/gender-equality-plan-dla-ug") Gender Equality Plan dla UG
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/kobiety-w-nauce") Kobiety w nauce
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/zamowienia-publiczne") Zamówienia publiczne
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/o-uczelni/oferty-pracy") Oferty pracy
+										.col-md-4
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/news/pl") Aktualności
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/news/pl/events") Wydarzenia
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/media/rzecznik-prasowy-ug") Rzecznik prasowy
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/media/centrum-komunikacji-i-promocji") Centrum Komunikacji i Promocji
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/media/") Media Uniwersyteckie
+											li.py-2.px-1
+												a.text-decoration-none.d-flex.text-white(href="https://sklepik.ug.edu.pl/" target="_blank") Sklep
+						// Kandydaci
+						li.nav-item.dropdown.position-static
+							a.nav-link.dropdown-toggle.text-white.mx-0.mx-md-2(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Kandydaci
+							ul.dropdown-menu.m-0.w-100.shadow-md.rounded-0.border-0.bg-secondary(aria-labelledby="navbarDropdown")
+								.container.p-0.px-md-2.py-md-5
+									.col-12
+										li.py-2.px-0
+											a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/rekrutacja/studia_i_i_ii_stopnia_oraz_jednolite_magisterskie") Studia I i II stopnia oraz jednolite magisterskie
+										li.py-2.px-0
+											a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/kandydaci/studia-wspolne-w-ramach-sea-eu") Studia wspólne w ramach SEA-EU
+										li.py-2.px-0
+											a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/rekrutacja/szkoly_doktorskie") Szkoły doktorskie
+										li.py-2.px-0
+											a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/kandydaci/studia-podyplomowe") Studia podyplomowe
+										li.py-2.px-0
+											a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/rekrutacja/kursy_i_szkolenia") Kursy i szkolenia
+										li.py-2.px-0
+											a.text-decoration-none.d-flex.text-white(href="https://ug.edu.pl/kandydaci/dni-otwarte-ug") Dni otwarte UG
+		// Bootstrap JS Bundle
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js")

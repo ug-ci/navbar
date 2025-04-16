@@ -1,0 +1,92 @@
+.bg-secondary {
+    background-color: #052d73 !important;
+}
+
+.bg-dark-blue {
+    background-color: #06204d !important;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body,
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+.fa-solid {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+/* Nawigacja  */
+
+
+.navbar .dropdown-menu {
+    background-image: url(https://ug.edu.pl/themes/ug_theme/images/pajak.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-height: 450px;
+}
+
+
+
+.navbar .dropdown-menu li a {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .dropdown-menu li a:after {
+    content: "";
+    margin-left: 10px;
+    position: relative;
+    flex-direction: row;
+    bottom: 0px;
+    width: 42px;
+    height: 16px;
+    background: url(https://ug.edu.pl/_logotypy-ug/arrow-white-hover.svg) no-repeat left center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0px);
+    opacity: 0;
+}
+
+.navbar .dropdown-menu li a:hover:after {
+    content: "";
+    opacity: 1;
+    margin-left: 10px;
+    flex-direction: row;
+    bottom: 0px;
+    width: 42px;
+    height: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .dropdown-menu li a:hover {
+    text-decoration: underline !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .dropdown-menu {
+        background-color: #03193e !important;
+        background-image: none;
+        min-height: fit-content !important;
+    }
+
+    .navbar .dropdown-toggle {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px!important;
+    }
+
+    .navbar .dropdown-menu li a:after {
+        display: none;
+    }
+
+}
+
+.navbar .dropdown-menu {
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+}

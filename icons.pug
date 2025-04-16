@@ -1,0 +1,33 @@
+div.row.d-none.d-lg-flex
+	div.col.pt-1.text-center.border-end.border-light
+		button.bg-transparent.border-0(type="button" data-bs-toggle="modal" data-bs-target="#GoogleSearch")
+			img(alt="Google Search" src="https://ug.edu.pl/themes/ug_faculty/images/search.svg")
+		// Modal
+		div.modal.modal-lg.fade.border-0.rounded-0#GoogleSearch(tabindex="-1" aria-labelledby="GoogleSearchLabel" aria-hidden="true")
+			div.modal-dialog.modal-dialog-centered
+				div.modal-content
+					div.modal-header
+						h5.modal-title#GoogleSearchLabel Wyszukiwanie
+						button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Zamknij")
+					div.modal-body
+						form.d-flex.flex-row.align-items-center.p-4.w-auto(action="https://ug.edu.pl/external/search" method="get")
+							label.form-label.visually-hidden(for="search") Wyszukaj w Google
+							input.form-control.form-control-lg.w-75.rounded-0#search(type="text" name="q" placeholder="Wpisz zapytanie")
+							button.btn.btn-primary.btn-lg.w-20.ms-3.fs-6.rounded-0(type="submit")
+								img.me-3(alt="Google Search" src="https://ug.edu.pl/themes/ug_faculty/images/search.svg")
+								| Szukaj
+	div.col.pt-1.text-center.border-end.border-light
+		a#radiomors(href="javascript:void(0)" onclick="window.open('http://player.mors.ug.edu.pl/sites/all/modules/jplayer/mors_popup.html', 'newWin','width=280,height=220')" tabindex="1" title="Słucha Radia MORS")
+			img(alt="Radio MORS" src="https://ug.edu.pl/themes/ug_faculty/images/radio.svg")
+	div.col.pt-1.text-center.border-end.border-light
+		a#webmail(href="https://outlook.com/ug.edu.pl" title="Poczta uniwersytecka")
+			img(alt="Poczta UG" src="https://ug.edu.pl/themes/ug_faculty/images/mail.svg")
+	div.col.pt-1.text-center.border-end.border-light
+		a#accessibility(href="http://bariery.ug.edu.pl" title="Strona Biura ds. Osób Niepełnosprawnych")
+			img(alt="Dla niepełnosprawnych" src="https://ug.edu.pl/themes/ug_faculty/images/wheelchair.svg")
+	div.col.pt-1.text-center.border-end.border-light
+		a#english(href="https://en.ug.edu.pl" lang="en" title="English Version")
+			img(alt="English Version" src="https://ug.edu.pl/themes/ug_theme/images/en.svg" style="max-height: 38px; min-height: 2em;")
+	div.col.pt-1.text-center.border-0
+		a(href="https://projekty.ug.edu.pl/projekty" title="Projekty rozwojowe" tabindex="0" class="ml-3" style="min-width: 112px!important;")
+			img(src="https://ug.edu.pl/themes/ug_theme/images/ue-flag.svg" alt="Unia Europejska" style="max-width: 75px; height: auto; margin-top: 2px;")
